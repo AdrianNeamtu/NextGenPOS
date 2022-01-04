@@ -70,7 +70,7 @@ public class Legume extends HttpServlet {
         //request.setAttribute("numberOfFreeParkingSpots", 10);
         
         List<LegumeDetails> legume = legumaBean.getAllLegume();
-        //request.setAttribute("legume", legume);
+        request.setAttribute("legume", legume);
         
          request.getRequestDispatcher("/WEB-INF/pages/legume.jsp").forward(request, response);
     }

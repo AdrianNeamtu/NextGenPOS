@@ -13,13 +13,12 @@
    <form method="POST" action="${pageContext.request.contextPath}/Legume">
    <c:forEach var="leguma" items="${legume}" varStatus="status">
         <div class="row">
-            <div class="col-md">
-                <input type="checkbox" name="leguma_ids" value="${leguma.id}"/>
-            </div>
             <div class="col-md-3">
+                <h4>Nume</h4>
                 ${leguma.name}
             </div>
             <div class="col-md-3">
+                <h4>Pret</h4>
                 ${leguma.price}
             </div>
         </div>

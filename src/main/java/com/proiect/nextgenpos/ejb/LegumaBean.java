@@ -32,7 +32,7 @@ public class LegumaBean {
     public List<LegumeDetails> getAllLegume() {
         LOG.info("getAllLegume");
         try{
-            Query query = em.createQuery("SELECT c FROM Legume c");
+            Query query = em.createQuery("SELECT c FROM Leguma c");
             List<Leguma> legume = (List<Leguma>) query.getResultList();
             return copyLegumeToDetails(legume);
         } catch (Exception ex){
